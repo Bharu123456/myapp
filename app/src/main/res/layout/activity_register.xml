@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expensepal" />
+
+    <EditText
+        android:id="@+id/register_pass_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Enter_Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/button_Register"
+        app:layout_constraintEnd_toEndOf="@+id/button_Register"
+        app:layout_constraintStart_toStartOf="@+id/button_Register"
+        android:importantForAutofill="no"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/register_email_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Enter_Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_pass_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_pass_input"
+        app:layout_constraintStart_toStartOf="@+id/register_pass_input"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/fullname"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/register_email_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_input"
+        app:layout_constraintStart_toStartOf="@+id/register_email_input"
+        tools:ignore="VisualLintTextFieldSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
